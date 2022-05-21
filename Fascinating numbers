@@ -1,0 +1,33 @@
+import java.util.*;
+class happy_number{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a number: ");
+		int n=sc.nextInt();
+		String concatinate=n+""+n*2+""+n*3;
+		System.out.println("concatinate number :"+concatinate);
+		boolean flaag=true;
+		for(char d='1'; d<='9';d++) {
+			int count=0;
+			for(int i=0;i<concatinate.length();i++) {
+				char ch=concatinate.charAt(i);
+				if(ch==d) {
+					count++;
+				}
+			}
+				if(count>1 || count==0) {
+					flaag=false;
+					break;
+				}
+			}
+		
+			if(flaag) {
+				System.out.println("Fascinating number");
+				}
+			
+			 else {
+				System.out.println("not a fascinating number");
+				}		
+		}
+	}
+
