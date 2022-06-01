@@ -1,5 +1,5 @@
 import java.util.*;
-class happy_number{
+class FacinatingNumber{
 	public static void main(String[] args){
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a number: ");
